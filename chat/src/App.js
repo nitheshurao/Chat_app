@@ -3,16 +3,13 @@ import Chat from './componets/Chat'
 import Signin from './componets/Signin'
 import './App.css';
 
-import { auth } from './firebase.js'
-import { useAuthState } from 'react-firebase-hooks/auth'
+import App1 from './Rcomnt/App1';
 
 function App() {
-  const [user] = useAuthState(auth)
+
   return (
     <div>
-      {/* <Signin />
-      <Chat /> */}
-      {user ? <Chat /> : <Signin />}
+      <App1 />
     </div>
   )
 }
